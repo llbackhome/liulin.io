@@ -1,1 +1,107 @@
-<h1>个人博客<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            float: left;
+            width: 70%;
+            margin-top: 10px;
+        }
+        #sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>欢迎来到我的个人博客</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于我</a></li>
+                    <li><a href="#">博客文章</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main">
+            <article>
+                <h2>博客文章标题</h2>
+                <p>这是博客文章的内容。你可以在这里写下你的心情、想法、经历等等。</p>
+            </article>
+            <article>
+                <h2>另一个博客文章标题</h2>
+                <p>这是另一篇博客文章的内容。</p>
+            </article>
+        </section>
+
+        <aside id="sidebar">
+            <h3>关于我</h3>
+            <p>这里是一些关于你的简介，兴趣爱好，或者其他你想分享的个人信息。</p>
+            <h3>最新文章</h3>
+            <ul>
+                <li><a href="#">文章标题1</a></li>
+                <li><a href="#">文章标题2</a></li>
+                <li><a href="#">文章标题3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>版权所有 &copy; 2024 你的名字</p>
+    </footer>
+</body>
+</html>
